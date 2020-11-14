@@ -1,7 +1,9 @@
 <template>
   <div>
     <div id="title">나는 어떤 전자기기일까?</div>
-    <button id="btn-start">시작하기</button>
+    <router-link to="/intro">
+        <button id="btn-start" @click="onClickBtnStart">시작하기</button>
+    </router-link>
     <footer>
     <img class="logo-img" src="../assets/logo.png" alt="logo">
     </footer>
@@ -13,7 +15,11 @@ export default {
   name: 'Home',
   data () {
     return {
-
+    }
+  },
+  methods: {
+    onClickBtnStart: () => {
+      console.log('hello')
     }
   }
 }

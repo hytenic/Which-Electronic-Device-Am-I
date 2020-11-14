@@ -7,17 +7,19 @@
       <br> 어쩌구 저쩌구 그러합니다.
     </div>
     <div>
-      <button class="btn-share">
+      <button class="btn-share" @click="onClickBtnShare">
         <img src="../assets/icon_share.png" alt="icon share">
         공유하기
       </button>
     </div>
     <div>
-      <button class="btn-retry">
-        <div class="btn-text">
-          또 다른 결과가 궁금하다면?
-        </div>
-      </button>
+      <router-link to="/home">
+        <button class="btn-retry">
+          <div class="btn-text">
+            또 다른 결과가 궁금하다면?
+          </div>
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -28,6 +30,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    onClickBtnShare () {
+      alert('YAYYYYYY')
     }
   }
 }
