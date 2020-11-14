@@ -7,7 +7,10 @@
       <br> 어쩌구 저쩌구 그러합니다.
     </div>
     <div>
-      <button class="btn-share">공유하기</button>
+      <button class="btn-share">
+        <img src="../assets/icon_share.png" alt="icon share">
+        공유하기
+      </button>
     </div>
     <div>
       <button class="btn-retry">
