@@ -35,6 +35,7 @@ export default {
   font-size: 30px;
   font-weight: bold;
   background-color: #2e4f67;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-img {
