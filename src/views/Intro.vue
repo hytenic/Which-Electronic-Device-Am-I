@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <img src="../assets/status_bar.png" alt="status bar" id="status-bar">
+  <div class="container">
+    <div class="img-status">
+      <img src="../assets/status_bar.png" alt="status bar" id="status-bar">
+    </div>
     <Clock id="clock"/>
     <img  id="message" src="../assets/message_light_new.png" alt="text message">
 
@@ -35,13 +37,15 @@ export default {
 </script>
 
 <style>
-body {
+.container {
   background-color: #787878;
+  min-height: 100vh;
+}
+.img-status {
+  text-align: right;
 }
 #status-bar {
   width: 25%;
-  float: right;
-  margin-top: -50px; /*app style 바꿔야하지 않을까.. */
 }
 #clock {
   margin-top: 20%;

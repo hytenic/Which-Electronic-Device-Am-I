@@ -27,6 +27,7 @@ export default {
 
 <style>
 #title {
+  padding-top: 100px;
   font-size: 25px;
   margin-bottom: 500px;
   font-weight: bold;

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="container">
+    <img class="sun-img" src="../assets/sun.png" alt="sun">
     <div class="title">{{question}}</div>
     <div v-for="answer in answers" :key="answer._id" >
       <button class="btn-answer" @click="onClickBtn">
@@ -39,10 +40,16 @@ export default {
 </script>
 
 <style>
+.container {
+  background-color: white;
+  min-height: 100vh;
+}
+
 .title {
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -59,5 +66,12 @@ export default {
   background-color: #2e4f67;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   margin: 5px;
+}
+
+.sun-img {
+  width: 70px;
+  position: absolute;
+  left: -35px;
+  top: 120px;
 }
 </style>

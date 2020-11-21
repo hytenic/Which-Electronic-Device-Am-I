@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>당신은 라디오!</h2>
+    <div>당신은 라디오!</div>
     <img src="../assets/radio_character.png" alt="radio character" class="character_icon">
     <div class="description">
       느림의 미학을 아는 당신! 일상의 소소한 즐거움을 알아차릴 수 있는 분이군요.
