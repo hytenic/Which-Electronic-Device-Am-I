@@ -38,11 +38,11 @@ export default {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #time {
-  font-size: 72px;
+  font-size: 85px;
   font-weight: 200;
 }
 #date {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 400;
 }
 </style>
