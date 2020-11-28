@@ -22,4 +22,11 @@ export default {
 body {
   margin: 0;
 }
+/* fix width for tablets & laptop*/
+@media screen and (min-width: 480px){
+  #app {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
 </style>
