@@ -42,16 +42,16 @@ export default {
 <style>
 .container {
   background-color: white;
-  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  padding: 30% 0 0;
 }
 
 .title {
   font-size: 25px;
   font-weight: bold;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10%;
+  padding-bottom: 10%;
 }
 
 .btn-answer {
