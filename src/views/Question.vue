@@ -2,8 +2,8 @@
   <div class="container">
     <img class="sun-img" src="../assets/sun.png" alt="sun">
     <div class="title">{{question}}</div>
-    <div v-for="answer in answers" :key="answer._id" >
-      <button class="btn-answer" @click="onClickBtn">
+    <div v-for="(answer, index) in answers" :key="answer._id" >
+      <button class="btn-answer" @click="() => onClickBtn(index, answer)">
         {{answer}}
       </button>
     </div>
@@ -18,13 +18,26 @@ export default {
     return {
       progress: 1,
       totalQuestionCount: 8,
-      questions: questions
+      questions: questions,
+      result: {}
     }
   },
   methods: {
-    onClickBtn () {
+    onClickBtn (index, answer) {
+      let curQuestionScores = this.questions[this.progress - 1]['score']
+      for (let device in curQuestionScores[index]) {
+        if (this.result[device]) {
+          this.result[device] += curQuestionScores[index][device]
+        } else {
+          this.result[device] = curQuestionScores[index][device]
+        }
+      }
+
+      // console.log(this.result)
+
       if (this.progress++ >= this.totalQuestionCount) {
         this.$router.push('/result')
+        // this.$router.push({path: '/result', query: {result: this.result}})
       }
     }
   },
@@ -42,16 +55,16 @@ export default {
 <style>
 .container {
   background-color: white;
-  max-height: 100vh;
-  position: relative;
-  padding: 30% 0 0;
+  min-height: 100vh;
 }
 
 .title {
   font-size: 25px;
   font-weight: bold;
-  padding: 0 10%;
-  padding-bottom: 10%;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .btn-answer {
