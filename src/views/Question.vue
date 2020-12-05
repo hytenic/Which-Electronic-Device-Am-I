@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <img class="sun-img" src="../assets/sun.png" alt="sun">
+    <transition name="sunrise">
+      <img class="sun-img" v-if="show" @transitionend="show = false" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
+    </transition>
     <div class="title">{{question}}</div>
     <div v-for="(answer, index) in answers" :key="answer._id" >
       <button class="btn-answer" @click="() => onClickBtn(index, answer)">
@@ -16,6 +18,7 @@ export default {
   name: 'Question',
   data () {
     return {
+      show: false,
       progress: 1,
       totalQuestionCount: 8,
       questions: questions,
@@ -48,6 +51,16 @@ export default {
     answers: function () {
       return this.questions[this.progress - 1].answers
     }
+  },
+  watch: {
+    progress: function (val) {
+      console.log(this.show, val)
+      this.show = true
+    }
+  },
+  mounted: function () {
+    console.log('mounted')
+    this.show = true
   }
 }
 </script>
@@ -55,16 +68,16 @@ export default {
 <style>
 .container {
   background-color: white;
-  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  padding: 30% 0 0;
 }
 
 .title {
   font-size: 25px;
   font-weight: bold;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10%;
+  padding-bottom: 10%;
 }
 
 .btn-answer {
@@ -84,7 +97,16 @@ export default {
 .sun-img {
   width: 70px;
   position: absolute;
-  left: -35px;
-  top: 120px;
+  left: var(--img-left);
 }
+
+.sunrise-enter {
+  transform: translateX(-60px);
+}
+/* rotate(-0.1turn) */
+
+.sunrise-enter-active {
+  transition: all 1.5s ease;
+}
+
 </style>
