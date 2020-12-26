@@ -29,12 +29,15 @@ export default {
   name: 'Result',
   data () {
     return {
-
+      result: {}
     }
   },
   methods: {
     onClickBtnShare () {
-      alert('YAYYYYYY')
+      console.log(this.$store.state.result)
+    },
+    logingResult (result) {
+
     }
   }
 }

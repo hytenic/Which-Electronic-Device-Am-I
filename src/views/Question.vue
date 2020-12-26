@@ -66,11 +66,9 @@ export default {
         }
       }
 
-      // console.log(this.result)
-
       if (this.progress++ >= this.totalQuestionCount) {
+        this.$store.state.result = this.result
         this.$router.push('/result')
-        // this.$router.push({path: '/result', query: {result: this.result}})
       }
     }
   },
