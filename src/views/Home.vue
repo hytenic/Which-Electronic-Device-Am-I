@@ -47,5 +47,6 @@ export default {
 
 .logo-img {
   margin: 50px;
+  height: 40px;
 }
 </style>

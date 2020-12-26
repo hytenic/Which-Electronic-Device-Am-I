@@ -5,33 +5,7 @@
       <transition name="sunrise">
         <img class="sun-img" v-if="progress === index" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + sunXPosTo + 'px; --img-top: ' + sunYPosTo + 'px;' + '--sunTranslateX: ' + (sunXPosFrom - sunXPosTo) + 'px; --sunTranslateY: ' + (sunYPosFrom - sunYPosTo) + 'px'">
       </transition>
-      <!-- 여기서 progress마다 정해진 좌표를 data에 정의하고 거기서 가져온 것을 --img-left에 집어 넣어. 회전 값도 집어 넣어. 그다음에 sunrise enter할 때 다음 목표값을 넣는거지. show는 안 쓸 거니까 지우자 -->
     </div>
-
-    <!-- <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 1" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 2" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 3" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 4" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 5" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 6" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 7" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition>
-    <transition name="sunrise">
-      <img class="sun-img" v-if="progress === 8" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + (progress - 1) * 60 + 'px'">
-    </transition> -->
 
     <div class="title">{{question}}</div>
     <div v-for="(answer, index) in answers" :key="answer._id" >
@@ -140,7 +114,7 @@ export default {
 }
 
 .sunrise-enter {
-  transform: translateX(var(--sunTranslateX)) translateY(var(--sunTranslateY));
+  transform: translateX(var(--sunTranslateX)) translateY(var(--sunTranslateY)) rotate(-0.1turn);
 }
 /* rotate(-0.1turn) */
 
