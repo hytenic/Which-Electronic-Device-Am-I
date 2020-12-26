@@ -29,7 +29,13 @@
         "keyboard": 2,
         "headphone": 2
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": -50,
+      "sunXPosTo": 0,
+      "sunYPosFrom": 88,
+      "sunYPosTo": 50
+    }
   },
   {
     "question": "당신이라면 꿀 같은 휴일에 나갈 건가요?",
@@ -53,7 +59,13 @@
         "keyboard": 2,
         "headphone": 3
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 0,
+      "sunXPosTo": 50,
+      "sunYPosFrom": 50,
+      "sunYPosTo": 22
+    }
   },
   {
     "question": "밖에서 식당을 선택할 때 원하는 식당의 분위기는?",
@@ -80,7 +92,13 @@
         "calculator": 3,
         "speaker": 1
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 50,
+      "sunXPosTo": 100,
+      "sunYPosFrom": 22,
+      "sunYPosTo": 5
+    }
   },
   {
     "question": "음악을 들으면서 이동할 건데 어떤 음악을 듣고 싶은가요?",
@@ -110,7 +128,13 @@
       {
         "calculator": 3
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 100,
+      "sunXPosTo": 150,
+      "sunYPosFrom": 5,
+      "sunYPosTo": 0
+    }
   },
   {
     "question": "길을 지나가다가 들어가고 싶은 가게가 있다. 어떤 가게일까?",
@@ -138,7 +162,13 @@
         "radio": 2,
         "headphone": 3
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 150,
+      "sunXPosTo": 200,
+      "sunYPosFrom": 0,
+      "sunYPosTo": 5
+    }
   },
   {
     "question": "여러 모임의 약속이 잡혔는데 어떤 모임을 선호하나요?",
@@ -171,7 +201,13 @@
         "headphone": 3,
         "keyboard": 3
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 200,
+      "sunXPosTo": 250,
+      "sunYPosFrom": 5,
+      "sunYPosTo": 22
+    }
   },
   {
     "question": "모임에서 지금 나는 무엇을 하는 것이 가장 잘 어울릴까?",
@@ -202,7 +238,13 @@
       {
         "vacume": 3
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 250,
+      "sunXPosTo": 300,
+      "sunYPosFrom": 22,
+      "sunYPosTo": 50
+    }
   },
   {
     "question": "자기 전에 방에서 무엇을 할 건가요?",
@@ -227,6 +269,12 @@
       {
         "keyboard": 3
       }
-    ]
+    ],
+    "animation": {
+      "sunXPosFrom": 300,
+      "sunXPosTo": 350,
+      "sunYPosFrom": 50,
+      "sunYPosTo": 88
+    }
   }
 ]
