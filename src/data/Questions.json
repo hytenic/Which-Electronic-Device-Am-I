@@ -26,8 +26,7 @@
         "watch": 2
       },
       {
-        "keyboard": 2,
-        "headphone": 2
+        "headphone": 1
       }
     ],
     "animation": {
@@ -46,14 +45,15 @@
     ],
     "score": [
       {
-        "phone": 3,
+        "phone": 2,
         "drone": 3,
-        "ps": 1,
+        "ps": 2,
         "airpod": 1
       },
       {
         "vacuum": 2,
-        "calculator": 2
+        "calculator": 2,
+        "watch": 2
       },
       {
         "keyboard": 2,
@@ -78,7 +78,8 @@
     "score": [
       {
         "phone": 3,
-        "airpod": 3
+        "airpod": 3,
+        "drone": 1
       },
       {
         "radio": 3,
@@ -114,7 +115,6 @@
         "ps": 3
       },
       {
-        "phone": 2,
         "airpod": 3,
         "vacuum": 3
       },
@@ -142,17 +142,17 @@
       "요즘 유행하는 스타일이 DP된 옷가게",
       "최신 전자기기 스토어",
       "굿즈를 파는 팝업 스토어",
-      "서점"
+      "서점",
+      "코인 노래방"
     ],
     "score": [
       {
-        "airpod": 3,
-        "phone": 1
+        "airpod": 3
       },
       {
         "watch": 3,
         "airpod": 1,
-        "speaker": 1,
+        "speaker":21,
         "keyboard": 2
       },
       {
@@ -160,7 +160,11 @@
       },
       {
         "radio": 2,
-        "headphone": 3
+        "headphone": 3,
+        "watch": 1
+      },
+      {
+        "ps": 3
       }
     ],
     "animation": {
@@ -181,21 +185,19 @@
     "score": [
       {
         "keyboard": 3,
-        "headphone": 1,
-        "drone": 1
+        "drone": 2
       },
       {
         "radio": 3,
         "vacume": 1,
-        "headphone": 1,
         "drone": 1
       },
       {
         "phone": 3,
         "ps": 3,
         "airpod": 1,
-        "speaker": 2,
-        "drone": 1
+        "speaker": 3,
+        "drone": 2
       },
       {
         "headphone": 3,
@@ -222,17 +224,17 @@
       {
         "phone": 3,
         "ps": 3,
-        "drone": 1
+        "drone": 2
       },
       {
         "calculator": 3,
         "speaker": 3
       },
       {
-        "headphone": 3
+        "headphone": 2
       },
       {
-        "phone": 3,
+        "ps": 2,
         "airpod": 1
       },
       {
@@ -260,7 +262,8 @@
       },
       {
         "phone": 3,
-        "airpod": 3
+        "airpod": 3,
+        "speaker": 3
       },
       {
         "calculator": 3,
