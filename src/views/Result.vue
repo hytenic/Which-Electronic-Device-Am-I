@@ -35,6 +35,14 @@ export default {
   methods: {
     onClickBtnShare () {
       console.log(this.$store.state.result)
+      let dummy = document.createElement('input')
+      let text = location.href
+      document.body.appendChild(dummy)
+      dummy.value = text
+      dummy.select()
+      document.execCommand('copy')
+      document.body.removeChild(dummy)
+      alert('클립보드로 URL이 복사되었습니다.')
     },
     logingResult (result) {
 
