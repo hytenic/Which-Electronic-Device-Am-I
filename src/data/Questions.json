@@ -33,16 +33,15 @@
       "sunXPosFrom": -50,
       "sunXPosTo": 0,
       "sunYPosFrom": 88,
-      "sunYPosTo": 50,
-      "sunRotate": 0
+      "sunYPosTo": 50
     }
   },
   {
-    "question": "당신이라면 꿀 같은 휴일에 나갈 건가요?",
+    "question": "당신이라면 꿀 같은 휴일에 나갈꺼야?",
     "answers": [
-      "일정이 없어도 무조건 나간다.",
-      "목적이 있으면 나간다.",
-      "절대 안 나간다."
+      "일정이 없어도 무조건 나간다",
+      "목적이 있으면 나간다",
+      "절대 안 나간다"
     ],
     "score": [
       {
@@ -65,17 +64,16 @@
       "sunXPosFrom": 0,
       "sunXPosTo": 50,
       "sunYPosFrom": 50,
-      "sunYPosTo": 22,
-      "sunRotate": 0.1
+      "sunYPosTo": 22
     }
   },
   {
     "question": "밖에서 식당을 선택할 때 원하는 식당의 분위기는?",
     "answers": [
-      "SNS 맛집 핫플레이스에 간다.",
-      "잘 알려지지 않은 골목의 작지만 분위기가 좋은 식당에 간다.",
-      "다른 사람이 가자고 하는 곳을 따라 간다.",
-      "가격, 위치, 음식 취향을 따져서 최적의 장소를 고른다."
+      "SNS 맛집 핫플레이스에 간다",
+      "잘 알려지지 않은 골목의 작지만 분위기가 좋은 식당에 간다",
+      "다른 사람이 가자고 하는 곳을 따라 간다",
+      "가격, 위치, 음식 취향을 따져서 최적의 장소를 고른다"
     ],
     "score": [
       {
@@ -100,8 +98,7 @@
       "sunXPosFrom": 50,
       "sunXPosTo": 100,
       "sunYPosFrom": 22,
-      "sunYPosTo": 5,
-      "sunRotate": 0.2
+      "sunYPosTo": 5
     }
   },
   {
@@ -136,8 +133,7 @@
       "sunXPosFrom": 100,
       "sunXPosTo": 150,
       "sunYPosFrom": 5,
-      "sunYPosTo": 0,
-      "sunRotate": 0.3
+      "sunYPosTo": 0
     }
   },
   {
@@ -156,7 +152,7 @@
       {
         "watch": 3,
         "airpod": 1,
-        "speaker":21,
+        "speaker":2,
         "keyboard": 2
       },
       {
@@ -175,8 +171,7 @@
       "sunXPosFrom": 150,
       "sunXPosTo": 200,
       "sunYPosFrom": 0,
-      "sunYPosTo": 5,
-      "sunRotate": 0.4
+      "sunYPosTo": 5
     }
   },
   {
@@ -213,8 +208,7 @@
       "sunXPosFrom": 200,
       "sunXPosTo": 250,
       "sunYPosFrom": 5,
-      "sunYPosTo": 22,
-      "sunRotate": 0.5
+      "sunYPosTo": 22
     }
   },
   {
@@ -251,14 +245,13 @@
       "sunXPosFrom": 250,
       "sunXPosTo": 300,
       "sunYPosFrom": 22,
-      "sunYPosTo": 50,
-      "sunRotate": 0.6
+      "sunYPosTo": 50
     }
   },
   {
     "question": "자기 전에 방에서 무엇을 할 건가요?",
     "answers": [
-      "오늘 하루 느꼈던 감정과 생각들을 다이어리에 옮겨본다.",
+      "오늘 하루 느꼈던 감정과 생각들을 다이어리에 옮겨본다",
       "SNS 확인하기",
       "오늘을 회고하고 내일의 계획을 세우기",
       "오늘 못 다한 덕질하기"
@@ -284,8 +277,7 @@
       "sunXPosFrom": 300,
       "sunXPosTo": 350,
       "sunYPosFrom": 50,
-      "sunYPosTo": 88,
-      "sunRotate": 0.7
+      "sunYPosTo": 88
     }
   }
 ]
