@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div>당신은 라디오!</div>
+    <div>당신은 {{deviceKorean[resultDevice]}}!</div>
     <img src="../assets/radio_character.png" alt="radio character" class="character_icon">
     <div class="description">
-      느림의 미학을 아는 당신! 일상의 소소한 즐거움을 알아차릴 수 있는 분이군요.
-      <br> 어쩌구 저쩌구 그러합니다.
+      {{resultMsg[resultDevice]}}
+      <!-- 느림의 미학을 아는 당신! 일상의 소소한 즐거움을 알아차릴 수 있는 분이군요.
+      <br> 어쩌구 저쩌구 그러합니다. -->
     </div>
     <div>
       <button class="btn-share" @click="onClickBtnShare">
@@ -25,16 +26,38 @@
 </template>
 
 <script>
+import results from '../data/Result.json'
 export default {
   name: 'Result',
   data () {
     return {
-      result: {}
+      result: {},
+      resultDevice: '',
+      resultMsg: results,
+      deviceKorean: {
+        radio: '라디오',
+        phone: '스마트폰',
+        ps: '플레이스테이션',
+        watch: '스마트 워치',
+        airpod: '에어팟',
+        calculator: '계산기',
+        headphone: '헤드폰',
+        drone: '드론',
+        keyboard: '키보드',
+        vacuum: '청소기',
+        speaker: 'AI스피커'
+      }
     }
+  },
+  created () {
+    console.log(this.$store.state.result)
+    this.result = this.$store.state.result
+
+    this.getResultDevice()
+    console.log(this.resultDevice)
   },
   methods: {
     onClickBtnShare () {
-      console.log(this.$store.state.result)
       let dummy = document.createElement('input')
       let text = location.href
       document.body.appendChild(dummy)
@@ -43,6 +66,17 @@ export default {
       document.execCommand('copy')
       document.body.removeChild(dummy)
       alert('클립보드로 URL이 복사되었습니다.')
+    },
+    getResultDevice () {
+      for (let key in this.result) {
+        if (this.resultDevice === '') {
+          this.resultDevice = key
+        } else {
+          if (this.result[this.resultDevice] < this.result[key]) {
+            this.resultDevice = key
+          }
+        }
+      }
     },
     logingResult (result) {
 
