@@ -29,12 +29,19 @@ export default {
   name: 'Result',
   data () {
     return {
-      result: {}
+      result: {},
+      resultDevice: ''
     }
+  },
+  created () {
+    console.log(this.$store.state.result)
+    this.result = this.$store.state.result
+
+    this.getResultDevice()
+    console.log(this.resultDevice)
   },
   methods: {
     onClickBtnShare () {
-      console.log(this.$store.state.result)
       let dummy = document.createElement('input')
       let text = location.href
       document.body.appendChild(dummy)
@@ -43,6 +50,17 @@ export default {
       document.execCommand('copy')
       document.body.removeChild(dummy)
       alert('클립보드로 URL이 복사되었습니다.')
+    },
+    getResultDevice () {
+      for (let key in this.result) {
+        if (this.resultDevice === '') {
+          this.resultDevice = key
+        } else {
+          if (this.result[this.resultDevice] < this.result[key]) {
+            this.resultDevice = key
+          }
+        }
+      }
     },
     logingResult (result) {
 
