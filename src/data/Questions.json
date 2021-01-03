@@ -87,7 +87,7 @@
         "headphone": 1
       },
       {
-        "vacume": 3
+        "vacuum": 3
       },
       {
         "calculator": 3,
@@ -189,7 +189,7 @@
       },
       {
         "radio": 3,
-        "vacume": 1,
+        "vacuum": 1,
         "drone": 1
       },
       {
@@ -238,7 +238,7 @@
         "airpod": 1
       },
       {
-        "vacume": 3
+        "vacuum": 3
       }
     ],
     "animation": {
