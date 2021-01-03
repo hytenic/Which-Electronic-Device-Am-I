@@ -3,7 +3,16 @@
 
     <div v-for="index in totalQuestionCount" :key="index" >
       <transition name="sunrise">
-        <img class="sun-img" v-if="progress === index" src="../assets/sun.png" alt="sun" :style="'--img-left: ' + sunXPosTo + 'px; --img-top: ' + sunYPosTo + 'px;' + '--sunTranslateX: ' + (sunXPosFrom - sunXPosTo) + 'px; --sunTranslateY: ' + (sunYPosFrom - sunYPosTo) + 'px'">
+        <img class="sun-img"
+        v-if="progress === index"
+        :src="getSunOrMoon"
+        alt="sun"
+        :style="`--img-left: ${sunXPosTo}px;
+                 --img-top: ${sunYPosTo}px;
+                 --sunTranslateX: ${(sunXPosFrom - sunXPosTo)}px;
+                 --sunTranslateY: ${(sunYPosFrom - sunYPosTo)}px;
+                 --img-rotate: ${sunRotate}turn;
+                 --sunRotate: ${sunRotate - 0.1}turn;`">
       </transition>
     </div>
 
@@ -22,7 +31,6 @@ export default {
   name: 'Question',
   data () {
     return {
-      show: false,
       progress: 1,
       totalQuestionCount: 8,
       questions: questions,
@@ -64,15 +72,13 @@ export default {
     },
     sunYPosTo: function () {
       return this.questions[this.progress - 1].animation.sunYPosTo
+    },
+    sunRotate: function () {
+      return this.questions[this.progress - 1].animation.sunRotate
+    },
+    getSunOrMoon: function () {
+      return this.progress <= 5 ? require('@/assets/sun2.png') : require('@/assets/moon.png')
     }
-  },
-  watch: {
-    progress: function (val) {
-      this.show = true
-    }
-  },
-  mounted: function () {
-    this.show = true
   }
 }
 </script>
@@ -111,12 +117,12 @@ export default {
   position: absolute;
   left: var(--img-left);
   top: var(--img-top);
+  transform: rotate(var(--img-rotate));
 }
 
 .sunrise-enter {
-  transform: translateX(var(--sunTranslateX)) translateY(var(--sunTranslateY)) rotate(-0.1turn);
+  transform: translateX(var(--sunTranslateX)) translateY(var(--sunTranslateY)) rotate(var(--sunRotate));
 }
-/* rotate(-0.1turn) */
 
 .sunrise-enter-active {
   transition: all 1.5s ease;
