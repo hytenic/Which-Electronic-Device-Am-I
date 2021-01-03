@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :style="`--img-background-color: ${getBGColor}`">
 
     <div v-for="index in totalQuestionCount" :key="index" >
       <transition name="sunrise">
@@ -78,6 +78,9 @@ export default {
     },
     getSunOrMoon: function () {
       return this.progress <= 5 ? require('@/assets/sun2.png') : require('@/assets/moon.png')
+    },
+    getBGColor: function () {
+      return this.questions[this.progress - 1].style.backgroundColor
     }
   }
 }
@@ -85,13 +88,14 @@ export default {
 
 <style>
 .container {
-  background-color: white;
-  max-height: 100vh;
+  background-color: var(--img-background-color);
+  height: 100vh;
   position: relative;
   padding: 30% 0 0;
 }
 
 .title {
+  color: white;
   font-size: 25px;
   font-weight: bold;
   padding: 0 10%;
@@ -125,7 +129,7 @@ export default {
 }
 
 .sunrise-enter-active {
-  transition: all 1.5s ease;
+  transition: all 1s ease;
 }
 
 </style>

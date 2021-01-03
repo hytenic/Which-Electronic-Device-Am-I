@@ -35,6 +35,9 @@
       "sunYPosFrom": 88,
       "sunYPosTo": 50,
       "sunRotate": 0
+    },
+    "style": {
+      "backgroundColor": "#B0EBFF"
     }
   },
   {
@@ -67,6 +70,9 @@
       "sunYPosFrom": 50,
       "sunYPosTo": 22,
       "sunRotate": 0.1
+    },
+    "style": {
+      "backgroundColor": "#84E1FF"
     }
   },
   {
@@ -102,6 +108,9 @@
       "sunYPosFrom": 22,
       "sunYPosTo": 5,
       "sunRotate": 0.2
+    },
+    "style": {
+      "backgroundColor": "#77CFF1"
     }
   },
   {
@@ -138,6 +147,9 @@
       "sunYPosFrom": 5,
       "sunYPosTo": 0,
       "sunRotate": 0.3
+    },
+    "style": {
+      "backgroundColor": "#69BCE3"
     }
   },
   {
@@ -177,6 +189,9 @@
       "sunYPosFrom": 0,
       "sunYPosTo": 5,
       "sunRotate": 0.4
+    },
+    "style": {
+      "backgroundColor": "#4D96C7"
     }
   },
   {
@@ -215,6 +230,9 @@
       "sunYPosFrom": 5,
       "sunYPosTo": 22,
       "sunRotate": 0.5
+    },
+    "style": {
+      "backgroundColor": "#3171AB"
     }
   },
   {
@@ -253,6 +271,9 @@
       "sunYPosFrom": 22,
       "sunYPosTo": 50,
       "sunRotate": 0.6
+    },
+    "style": {
+      "backgroundColor": "#154B8E"
     }
   },
   {
@@ -286,6 +307,9 @@
       "sunYPosFrom": 50,
       "sunYPosTo": 88,
       "sunRotate": 0.7
+    },
+    "style": {
+      "backgroundColor": "#080E41"
     }
   }
 ]
