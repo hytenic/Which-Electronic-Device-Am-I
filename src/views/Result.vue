@@ -46,6 +46,19 @@ export default {
         keyboard: '키보드',
         vacuum: '청소기',
         speaker: 'AI스피커'
+      },
+      deviceTotalScroe: {
+        radio: 14,
+        phone: 17,
+        ps: 15,
+        watch: 13,
+        airpod: 17,
+        calculator: 17,
+        headphone: 16,
+        drone: 13,
+        keyboard: 17,
+        vacuum: 15,
+        speaker: 13
       }
     }
   },
@@ -53,6 +66,7 @@ export default {
     console.log(this.$store.state.result)
     this.result = this.$store.state.result
 
+    this.calculateResultScore()
     this.getResultDevice()
     console.log(this.resultDevice)
   },
@@ -78,8 +92,12 @@ export default {
         }
       }
     },
-    logingResult (result) {
-
+    calculateResultScore () {
+      console.log(this.result)
+      for (let device in this.result) {
+        this.result[device] = (this.result[device] / this.deviceTotalScroe[device]).toFixed(3) // 세번째 소수점 자리에서 반올림
+      }
+      console.log(this.result)
     }
   }
 }
