@@ -33,7 +33,11 @@
       "sunXPosFrom": -50,
       "sunXPosTo": 0,
       "sunYPosFrom": 88,
-      "sunYPosTo": 50
+      "sunYPosTo": 50,
+      "sunRotate": 0
+    },
+    "style": {
+      "backgroundColor": "#B0EBFF"
     }
   },
   {
@@ -64,7 +68,11 @@
       "sunXPosFrom": 0,
       "sunXPosTo": 50,
       "sunYPosFrom": 50,
-      "sunYPosTo": 22
+      "sunYPosTo": 22,
+      "sunRotate": 0.1
+    },
+    "style": {
+      "backgroundColor": "#84E1FF"
     }
   },
   {
@@ -98,7 +106,11 @@
       "sunXPosFrom": 50,
       "sunXPosTo": 100,
       "sunYPosFrom": 22,
-      "sunYPosTo": 5
+      "sunYPosTo": 5,
+      "sunRotate": 0.2
+    },
+    "style": {
+      "backgroundColor": "#77CFF1"
     }
   },
   {
@@ -133,7 +145,11 @@
       "sunXPosFrom": 100,
       "sunXPosTo": 150,
       "sunYPosFrom": 5,
-      "sunYPosTo": 0
+      "sunYPosTo": 0,
+      "sunRotate": 0.3
+    },
+    "style": {
+      "backgroundColor": "#69BCE3"
     }
   },
   {
@@ -171,7 +187,11 @@
       "sunXPosFrom": 150,
       "sunXPosTo": 200,
       "sunYPosFrom": 0,
-      "sunYPosTo": 5
+      "sunYPosTo": 5,
+      "sunRotate": 0.4
+    },
+    "style": {
+      "backgroundColor": "#4D96C7"
     }
   },
   {
@@ -208,7 +228,11 @@
       "sunXPosFrom": 200,
       "sunXPosTo": 250,
       "sunYPosFrom": 5,
-      "sunYPosTo": 22
+      "sunYPosTo": 22,
+      "sunRotate": 0.5
+    },
+    "style": {
+      "backgroundColor": "#3171AB"
     }
   },
   {
@@ -245,7 +269,11 @@
       "sunXPosFrom": 250,
       "sunXPosTo": 300,
       "sunYPosFrom": 22,
-      "sunYPosTo": 50
+      "sunYPosTo": 50,
+      "sunRotate": 0.6
+    },
+    "style": {
+      "backgroundColor": "#154B8E"
     }
   },
   {
@@ -277,7 +305,11 @@
       "sunXPosFrom": 300,
       "sunXPosTo": 350,
       "sunYPosFrom": 50,
-      "sunYPosTo": 88
+      "sunYPosTo": 88,
+      "sunRotate": 0.7
+    },
+    "style": {
+      "backgroundColor": "#080E41"
     }
   }
 ]
