@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>당신은 {{deviceKorean[resultDevice]}}!</div>
-    <img src="../assets/radio_character.png" alt="radio character" class="character_icon">
+    <img v-bind:src="require('@/assets/' + pictureEachDevice[resultDevice])" v-bind:alt="resultDevice" class="character_icon">
     <div class="description">
       {{resultMsg[resultDevice]}}
       <!-- 느림의 미학을 아는 당신! 일상의 소소한 즐거움을 알아차릴 수 있는 분이군요.
@@ -59,6 +59,19 @@ export default {
         keyboard: 17,
         vacuum: 15,
         speaker: 13
+      },
+      pictureEachDevice: {
+        radio: 'radio.png',
+        phone: 'smartphone.png',
+        ps: 'playstation.png',
+        watch: 'smartwatch.png',
+        airpod: 'airpods.png',
+        calculator: 'calculator.png',
+        headphone: 'headphone.png',
+        drone: 'drone.png',
+        keyboard: 'keyboard.png',
+        vacuum: 'robot.png',
+        speaker: 'ai.png'
       }
     }
   },
