@@ -50,9 +50,9 @@ export default {
       deviceTotalScroe: {
         radio: 14,
         phone: 17,
-        ps: 15,
-        watch: 13,
-        airpod: 17,
+        ps: 13,
+        watch: 16,
+        airpod: 16,
         calculator: 17,
         headphone: 16,
         drone: 13,
