@@ -17,7 +17,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  width: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
