@@ -155,5 +155,6 @@ export default {
   }
   #result-device{
     font-size: 28px;
+    margin: 30px auto;
   }
 </style>
