@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>당신은 {{deviceKorean[resultDevice]}}!</div>
+    <div id="result-device">당신은 {{deviceKorean[resultDevice]}}!</div>
     <img v-bind:src="require('@/assets/' + pictureEachDevice[resultDevice])" v-bind:alt="resultDevice" class="character_icon">
     <div class="description">
       {{resultMsg[resultDevice]}}
@@ -120,7 +120,7 @@ export default {
   .description {
     width: 85%;
     margin: 30px;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.3;
   }
   .character_icon {
@@ -152,5 +152,8 @@ export default {
   .btn-text {
     margin-left: 20%;
     margin-right: 20%;
+  }
+  #result-device{
+    font-size: 28px;
   }
 </style>
