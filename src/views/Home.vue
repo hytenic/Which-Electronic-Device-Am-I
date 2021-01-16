@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div id="title">나는 어떤 전자기기일까?</div>
+    <div id="title-container">
+      <div id="sub-title">재미로 찾는 페르소나</div>
+      <div id="title">나는 어떤 전자기기일까?</div>
+    </div>
     <router-link to="/intro">
         <button id="btn-start" @click="onClickBtnStart">시작하기</button>
     </router-link>
@@ -26,10 +29,19 @@ export default {
 </script>
 
 <style>
+
+#title-container {
+  margin: 80% auto 50% auto;
+}
+
+#sub-title {
+  font-size: 20px;
+  padding-right: 33%;
+}
+
 #title {
-  padding-top: 100px;
-  font-size: 25px;
-  margin-bottom: 500px;
+  font-size: 30px;
+  /* margin: 100% auto 50% auto; */
   font-weight: bold;
 }
 
