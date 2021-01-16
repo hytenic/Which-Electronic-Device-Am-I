@@ -16,9 +16,9 @@
       </transition>
     </div>
 
-    <div class="title">{{question}}</div>
+    <div class="title" :style="`--title-color: ${getTitleColor}`">{{question}}</div>
     <div v-for="(answer, index) in answers" :key="answer._id" >
-      <button class="btn-answer" @click="() => onClickBtn(index, answer)">
+      <button class="btn-answer" :style="`--btn-color: ${getBtnColor}`" @click="() => onClickBtn(index, answer)">
         {{answer}}
       </button>
     </div>
@@ -81,6 +81,12 @@ export default {
     },
     getBGColor: function () {
       return this.questions[this.progress - 1].style.backgroundColor
+    },
+    getTitleColor: function () {
+      return this.progress <= 4 ? '#2C3E50' : '#EBEBEB'
+    },
+    getBtnColor: function () {
+      return this.progress <= 5 ? '#FFFFFF' : '#E7E9FF'
     }
   }
 }
@@ -91,29 +97,27 @@ export default {
   background-color: var(--img-background-color);
   height: 100vh;
   position: relative;
-  padding: 30% 0 0;
 }
 
 .title {
-  color: white;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
-  padding: 0 10%;
-  padding-bottom: 10%;
+  padding: 40% 10% 20% 10%;
+  color: var(--title-color);
 }
 
 .btn-answer {
-  width: 80%;
-  height: 70px;
-  border-radius: 20px;
+  width: 82%;
+  height: 64px;
+  border-radius: 12px;
   border: 0px;
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: normal;
   padding: 10px;
-  background-color: #2e4f67;
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-  margin: 5px;
+  background-color: var(--btn-color);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+  margin: 10px;
   outline: none;
 }
 
