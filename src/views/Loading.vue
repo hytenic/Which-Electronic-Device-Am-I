@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="sun-img" src="@/assets/sun2.png" />
+    <img class="sun-img-loading" src="@/assets/sun2.png" />
     <div id="loading-msg">
       두구두구두구...!!!
     </div>
@@ -32,7 +32,7 @@ export default {
   font-weight: bold;
 }
 
-.sun-img {
+.sun-img-loading {
   width: 70px;
   left: 40%;
   top: 30%;

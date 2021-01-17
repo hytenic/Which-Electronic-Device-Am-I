@@ -22,6 +22,14 @@
         {{answer}}
       </button>
     </div>
+    <transition name="stary-night">
+      <div class="stars" v-if="progress > 7">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 30px; left: 120px">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 90px; left: 210px">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 45px; left: 280px;">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 80px; left: 80px;">
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -135,6 +143,24 @@ export default {
 
 .sunrise-enter-active {
   transition: all 1s ease;
+}
+
+.star {
+  position: absolute;
+  filter: invert(94%) sepia(13%) saturate(1159%) hue-rotate(1deg) brightness(125%) contrast(101%);
+}
+
+.stars {
+  top: 0px;
+  position: absolute;
+}
+
+.stary-night-enter {
+  transform: translateY(-100px)
+}
+
+.stary-night-enter-active {
+  transition: all 1s cubic-bezier(.41,.27,.53,1.57)
 }
 
 </style>
