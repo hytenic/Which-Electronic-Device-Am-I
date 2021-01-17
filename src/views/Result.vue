@@ -3,7 +3,9 @@
     <div id="result-device">당신은 {{deviceKorean[resultDevice]}}!</div>
     <img v-bind:src="require('@/assets/' + pictureEachDevice[resultDevice])" v-bind:alt="resultDevice" class="character_icon">
     <div class="description">
-      {{resultMsg[resultDevice]}}
+      <pre class="result-masseage">
+        {{resultMsg[resultDevice]}}
+      </pre>
       <!-- 느림의 미학을 아는 당신! 일상의 소소한 즐거움을 알아차릴 수 있는 분이군요.
       <br> 어쩌구 저쩌구 그러합니다. -->
     </div>
@@ -126,6 +128,11 @@ export default {
   .character_icon {
     width:150px;
   }
+
+  .result-masseage {
+    white-space: pre-line;
+  }
+
   .btn-share {
     width: 40%;
     height: 43px;
