@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="sun-img-loading" src="@/assets/sun2.png" />
+    <img class="sun-img-loading" src="@/assets/sun3.png" />
     <div id="loading-msg">
       두구두구두구...!!!
     </div>
