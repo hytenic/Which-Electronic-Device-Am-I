@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <img class="sun-img-loading" src="@/assets/sun3.png" />
+  <div class="container-loading">
+    <img class="sun-img-loading" src="@/assets/moon.png" />
+    <div class="stars-loading">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 20px; top: 30px; left: 120px; transform: rotate(0.1turn);">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 20px; top: 90px; left: 210px; transform: rotate(0.1turn)">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 14px; top: 45px; left: 280px; transform: rotate(0.2turn)">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 14px; top: 80px; left: 80px; transform: rotate(0.1turn)">
+    </div>
     <div id="loading-msg">
       두구두구두구...!!!
     </div>
@@ -25,17 +31,34 @@ export default {
 </script>
 
 <style>
+.container-loading {
+  background-color: #080E41;
+  height: 100vh;
+  position: relative;
+}
 
 #loading-msg {
-  margin: 100% auto 50% auto;
+  top: 50%;
   font-size: 30px;
   font-weight: bold;
+  color: white;
+  position: relative;
 }
 
 .sun-img-loading {
   width: 70px;
   left: 40%;
   top: 30%;
+  position: absolute;
+}
+
+.star-loading {
+  position: absolute;
+  filter: invert(94%) sepia(13%) saturate(1159%) hue-rotate(1deg) brightness(125%) contrast(101%);
+}
+
+.stars-loading {
+  top: 25%;
   position: absolute;
 }
 
