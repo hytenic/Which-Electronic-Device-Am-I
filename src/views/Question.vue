@@ -18,10 +18,16 @@
 
     <div class="title" :style="`--title-color: ${getTitleColor}`">{{question}}</div>
     <div v-for="(answer, index) in answers" :key="answer._id" >
-      <button class="btn-answer" :style="`--btn-color: ${getBtnColor}`" @click="() => onClickBtn(index, answer)">
-        {{answer}}
-      </button>
+      <button class="btn-answer" :style="`--btn-color: ${getBtnColor}`" @click="() => onClickBtn(index, answer)">{{answer}}</button>
     </div>
+    <transition name="stary-night">
+      <div class="stars" v-if="progress > 7">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 30px; left: 120px; transform: rotate(0.1turn);">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 90px; left: 210px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 45px; left: 280px; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 80px; left: 80px; transform: rotate(0.1turn)">
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -77,7 +83,7 @@ export default {
       return this.questions[this.progress - 1].animation.sunRotate
     },
     getSunOrMoon: function () {
-      return this.progress <= 5 ? require('@/assets/sun2.png') : require('@/assets/moon.png')
+      return this.progress <= 5 ? require('@/assets/sun3.png') : require('@/assets/moon.png')
     },
     getBGColor: function () {
       return this.questions[this.progress - 1].style.backgroundColor
@@ -104,11 +110,12 @@ export default {
   font-weight: bold;
   padding: 40% 10% 20% 10%;
   color: var(--title-color);
+  white-space: pre-line;
 }
 
 .btn-answer {
   width: 82%;
-  height: 64px;
+  height: 70px;
   border-radius: 12px;
   border: 0px;
   color: black;
@@ -119,6 +126,8 @@ export default {
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
   margin: 10px;
   outline: none;
+  white-space: pre-line;
+  line-height: 1.25;
 }
 
 .sun-img {
@@ -135,6 +144,24 @@ export default {
 
 .sunrise-enter-active {
   transition: all 1s ease;
+}
+
+.star {
+  position: absolute;
+  filter: invert(94%) sepia(13%) saturate(1159%) hue-rotate(1deg) brightness(125%) contrast(101%);
+}
+
+.stars {
+  top: 0px;
+  position: absolute;
+}
+
+.stary-night-enter {
+  transform: translateY(-100px)
+}
+
+.stary-night-enter-active {
+  transition: all 1s cubic-bezier(.41,.27,.53,1.57)
 }
 
 </style>

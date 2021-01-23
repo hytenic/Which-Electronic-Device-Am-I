@@ -1,29 +1,47 @@
 <template>
-  <div>
-    <div id="result-device">당신은 {{deviceKorean[resultDevice]}}!</div>
+  <div class="container-result">
+    <div class="stars-result">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 18px; top: 30px; left: 50px; transform: rotate(0.1turn);">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 15px; left: 150px; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 12px; top: 35px; left: 350px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 20px; top: 15px; left: 320px; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 16px; top: 150px; left: 300px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 20px; top: 170px; left: 80px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 16px; top: 130px; left: 5px; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 18px; top: 250px; left: 360px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 300px; left: 300px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 12px; top: 230px; left: 60px; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 220px; left: 340px; transform: rotate(0.1turn)">
+    </div>
+
+    <div id="device-description">당신은</div>
+    <div id="result-device">{{deviceKorean[resultDevice]}}</div>
     <img v-bind:src="require('@/assets/' + pictureEachDevice[resultDevice])" v-bind:alt="resultDevice" class="character_icon">
     <div class="description">
       <pre class="result-masseage">
         {{resultMsg[resultDevice]}}
       </pre>
-      <!-- 느림의 미학을 아는 당신! 일상의 소소한 즐거움을 알아차릴 수 있는 분이군요.
-      <br> 어쩌구 저쩌구 그러합니다. -->
     </div>
     <div>
-      <button class="btn-share" @click="onClickBtnShare">
-        <img src="../assets/icon_share.png" alt="icon share">
-        공유하기
-      </button>
-    </div>
-    <div>
-      <router-link to="/home">
-        <button class="btn-retry">
-          <div class="btn-text">
-            또 다른 결과가 궁금하다면?
-          </div>
+      <span>
+        <router-link to="/home">
+          <button class="btn">
+            <img src="../assets/sun-white-border.png" alt="icon share" class="btn-img">
+            <div class="btn-text">다시하기</div>
+          </button>
+        </router-link>
+      </span>
+      <span>
+        <button class="btn">
+          <img src="../assets/moon-white-border.png" alt="icon share" class="btn-img" @click="onClickBtnShare">
+          <div class="btn-text">공유하기</div>
         </button>
-      </router-link>
+      </span>
     </div>
+
+    <footer>
+      <img class="logo-img-result" src="../assets/logo-white.png" alt="logo">
+    </footer>
   </div>
 </template>
 
@@ -119,18 +137,56 @@ export default {
 </script>
 
 <style>
+  .container-result {
+    background-color: #080E41;
+    height: 100vh;
+    position: relative;
+  }
+
+  #device-description {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  #result-device{
+    font-size: 36px;
+    padding-bottom: 30px;
+    color: white;
+    font-weight: bold;
+  }
+
   .description {
     width: 85%;
     margin: 30px;
     font-size: 16px;
     line-height: 1.3;
+    color: white;
   }
+
   .character_icon {
     width:150px;
   }
 
   .result-masseage {
     white-space: pre-line;
+  }
+
+  .btn {
+    background-color: #080E41;
+    border-style: none;
+    width: 30%;
+    margin: 10px;
+  }
+
+  .btn-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .btn-img {
+    width: 66px;
   }
 
   .btn-share {
@@ -146,22 +202,35 @@ export default {
   }
   .btn-retry {
     width: 80%;
-    height: 90px;
+    height: 50px;
     background-color: #2e4f67;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 20px;
     border-width: 0px;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
     margin: 10px;
   }
-  .btn-text {
-    margin-left: 20%;
-    margin-right: 20%;
+
+  .logo-img-result {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 30px;
   }
-  #result-device{
-    font-size: 28px;
-    margin: 30px auto;
+
+  .star-result {
+    position: absolute;
+    /* filter: invert(40%) sepia(18%) saturate(452%) hue-rotate(159deg) brightness(94%) contrast(92%) blur(2px); */
+    filter: invert(94%) sepia(13%) saturate(1159%) hue-rotate(1deg) brightness(125%) contrast(101%);
+  }
+
+  .stars-result {
+    top: 0px;
+    position: absolute;
   }
 </style>
