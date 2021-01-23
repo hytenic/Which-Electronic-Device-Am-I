@@ -35,8 +35,15 @@ export default {
 }
 
 #sub-title {
-  font-size: 20px;
-  padding-right: 33%;
+    font-size: 20px;
+    padding-right: 33%;
+  }
+
+@media(min-width:400px){
+  #sub-title {
+    font-size: 20px;
+    padding-right: 27%;
+  }
 }
 
 #title {
