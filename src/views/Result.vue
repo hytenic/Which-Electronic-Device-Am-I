@@ -118,6 +118,8 @@ export default {
     onClickBtnShare () {
       let dummy = document.createElement('input')
       let text = location.href
+      text = text.split('#')[0]
+      console.log(text)
       document.body.appendChild(dummy)
       dummy.value = text
       dummy.select()
