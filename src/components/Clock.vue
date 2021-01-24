@@ -17,7 +17,6 @@ export default {
     }
   },
   created: function () {
-    console.log('created')
     this.updateDateTime()
   },
   methods: {
@@ -27,7 +26,6 @@ export default {
       this.months = now.getMonth() + 1
       this.dates = now.getDate()
       this.days = week[now.getDay()]
-      console.log(now.getMonth())
     }
   }
 }

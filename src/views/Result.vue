@@ -109,12 +109,10 @@ export default {
     }
   },
   created () {
-    console.log(this.$store.state.result)
     this.result = this.$store.state.result
 
     this.calculateResultScore()
     this.getResultDevice()
-    console.log(this.resultDevice)
   },
   methods: {
     onClickBtnShare () {
@@ -139,11 +137,9 @@ export default {
       }
     },
     calculateResultScore () {
-      console.log(this.result)
       for (let device in this.result) {
         this.result[device] = (this.result[device] / this.deviceTotalScroe[device]).toFixed(3) // 세번째 소수점 자리에서 반올림
       }
-      console.log(this.result)
     }
   }
 }
