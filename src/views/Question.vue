@@ -7,25 +7,27 @@
         v-if="progress === index"
         :src="getSunOrMoon"
         alt="sun"
-        :style="`--img-left: ${sunXPosTo}px;
-                 --img-top: ${sunYPosTo}px;
-                 --sunTranslateX: ${(sunXPosFrom - sunXPosTo)}px;
-                 --sunTranslateY: ${(sunYPosFrom - sunYPosTo)}px;
+        :style="`--img-left: ${sunXPosTo}vw;
+                 --img-top: ${sunYPosTo}vh;
+                 --sunTranslateX: ${(sunXPosFrom - sunXPosTo)}vw;
+                 --sunTranslateY: ${(sunYPosFrom - sunYPosTo)}vh;
                  --img-rotate: ${sunRotate}turn;
                  --sunRotate: ${sunRotate - 0.1}turn;`">
       </transition>
     </div>
 
     <div class="title" :style="`--title-color: ${getTitleColor}`">{{question}}</div>
-    <div v-for="(answer, index) in answers" :key="answer._id" >
-      <button class="btn-answer" :style="`--btn-color: ${getBtnColor}`" @click="() => onClickBtn(index, answer)">{{answer}}</button>
+    <div class="answers">
+      <div v-for="(answer, index) in answers" :key="answer._id" >
+        <button class="btn-answer" :style="`--btn-color: ${getBtnColor}`" @click="() => onClickBtn(index, answer)">{{answer}}</button>
+      </div>
     </div>
     <transition name="stary-night">
       <div class="stars" v-if="progress > 7">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 30px; left: 120px; transform: rotate(0.1turn);">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 90px; left: 210px; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 45px; left: 280px; transform: rotate(0.2turn)">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 80px; left: 80px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 10vh; left: 21vw; transform: rotate(0.1turn);">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 5.5vh; left: 75vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 11vh; left: 56vw; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 3.5vh; left: 32vw; transform: rotate(0.1turn)">
       </div>
     </transition>
   </div>
@@ -101,7 +103,7 @@ export default {
 <style>
 .container {
   background-color: var(--img-background-color);
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -111,6 +113,10 @@ export default {
   padding: 40% 10% 20% 10%;
   color: var(--title-color);
   white-space: pre-line;
+}
+
+.answers {
+  padding-bottom: 30px;
 }
 
 .btn-answer {

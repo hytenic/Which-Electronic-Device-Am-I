@@ -27,7 +27,7 @@ body {
 /* fix width for tablets & laptop*/
 @media screen and (min-width: 480px){
   #app {
-    width: 480px;
+    width: 100vmin;
     margin: 0 auto;
   }
 }

@@ -1,17 +1,17 @@
 <template>
   <div class="container-result">
     <div class="stars-result">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 18px; top: 30px; left: 50px; transform: rotate(0.1turn);">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 15px; left: 150px; transform: rotate(0.2turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 12px; top: 35px; left: 350px; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 20px; top: 15px; left: 320px; transform: rotate(0.2turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 16px; top: 150px; left: 300px; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 20px; top: 170px; left: 80px; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 16px; top: 130px; left: 5px; transform: rotate(0.2turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 18px; top: 250px; left: 360px; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 300px; left: 300px; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 12px; top: 230px; left: 60px; transform: rotate(0.2turn)">
-        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 220px; left: 340px; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 18px; top: 4.3vh; left: 13vw; transform: rotate(0.1turn);">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 2vh; left: 40vw; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 12px; top: 4.5vh; left: 94vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 20px; top: 2vh; left: 85vw; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 16px; top: 19vh; left: 80vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 20px; top: 21vh; left: 21vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 16px; top: 16vh; left: 2vw; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 18px; top: 31vh; left: 93vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 37vh; left: 80vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 12px; top: 28.5vh; left: 16vw; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 27vh; left: 88vw; transform: rotate(0.1turn)">
     </div>
 
     <div id="device-description">{{deviceDescription[resultDevice]}}</div>
@@ -150,7 +150,7 @@ export default {
 <style>
   .container-result {
     background-color: #080E41;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
   }
 
@@ -225,12 +225,12 @@ export default {
   }
 
   .logo-img-result {
-    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     height: 30px;
     margin: auto;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 

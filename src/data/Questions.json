@@ -30,10 +30,10 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": -45,
+      "sunXPosFrom": -12,
       "sunXPosTo": 0,
-      "sunYPosFrom": 88,
-      "sunYPosTo": 50,
+      "sunYPosFrom": 14,
+      "sunYPosTo": 6,
       "sunRotate": 0
     },
     "style": {
@@ -66,9 +66,9 @@
     ],
     "animation": {
       "sunXPosFrom": 0,
-      "sunXPosTo": 45,
-      "sunYPosFrom": 50,
-      "sunYPosTo": 22,
+      "sunXPosTo": 12,
+      "sunYPosFrom": 6,
+      "sunYPosTo": 2.5,
       "sunRotate": 0.1
     },
     "style": {
@@ -103,10 +103,10 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": 45,
-      "sunXPosTo": 90,
-      "sunYPosFrom": 22,
-      "sunYPosTo": 5,
+      "sunXPosFrom": 12,
+      "sunXPosTo": 24,
+      "sunYPosFrom": 2.5,
+      "sunYPosTo": 0.5,
       "sunRotate": 0.2
     },
     "style": {
@@ -143,9 +143,9 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": 90,
-      "sunXPosTo": 135,
-      "sunYPosFrom": 5,
+      "sunXPosFrom": 24,
+      "sunXPosTo": 36,
+      "sunYPosFrom": 0.5,
       "sunYPosTo": 0,
       "sunRotate": 0.3
     },
@@ -185,8 +185,8 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": 135,
-      "sunXPosTo": 180,
+      "sunXPosFrom": 36,
+      "sunXPosTo": 48,
       "sunYPosFrom": 0,
       "sunYPosTo": 0,
       "sunRotate": 0.4
@@ -226,10 +226,10 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": 180,
-      "sunXPosTo": 225,
+      "sunXPosFrom": 48,
+      "sunXPosTo": 60,
       "sunYPosFrom": 0,
-      "sunYPosTo": 5,
+      "sunYPosTo": 0.5,
       "sunRotate": 0.5
     },
     "style": {
@@ -262,10 +262,10 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": 225,
-      "sunXPosTo": 270,
-      "sunYPosFrom": 5,
-      "sunYPosTo": 22,
+      "sunXPosFrom": 60,
+      "sunXPosTo": 72,
+      "sunYPosFrom": 0.5,
+      "sunYPosTo": 2.5,
       "sunRotate": 0.6
     },
     "style": {
@@ -298,10 +298,10 @@
       }
     ],
     "animation": {
-      "sunXPosFrom": 270,
-      "sunXPosTo": 315,
-      "sunYPosFrom": 22,
-      "sunYPosTo": 50,
+      "sunXPosFrom": 72,
+      "sunXPosTo": 79,
+      "sunYPosFrom": 2.5,
+      "sunYPosTo": 6,
       "sunRotate": 0.7
     },
     "style": {
