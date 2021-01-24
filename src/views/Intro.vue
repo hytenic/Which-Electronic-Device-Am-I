@@ -9,7 +9,7 @@
       <!-- <transition name="fade"> -->
       <div id="pop-up" v-show=checked>
         <div id="notice">
-          갑자기 생긴 꿀같은 휴식
+          갑자기 생긴 꿀같은 휴식!!!
           <br> 오늘 하루 어떻게 보내볼까?
           <div>
             <router-link to="/question">
@@ -88,9 +88,10 @@ export default {
   0 100px 80px rgba(0, 0, 0, 0.12)
 }
 #notice {
-  font-size: 22px;
+  font-size: 18px;
   color: #000000;
 }
+
 #btn-start-questions {
   margin-top: 10%;
   border: 0px;

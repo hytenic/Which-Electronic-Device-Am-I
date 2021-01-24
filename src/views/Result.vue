@@ -14,7 +14,7 @@
         <img src="@/assets/star.png" alt="star" class="star-result" style="width: 14px; top: 220px; left: 340px; transform: rotate(0.1turn)">
     </div>
 
-    <div id="device-description">당신은</div>
+    <div id="device-description">{{deviceDescription[resultDevice]}}</div>
     <div id="result-device">{{deviceKorean[resultDevice]}}</div>
     <img v-bind:src="require('@/assets/' + pictureEachDevice[resultDevice])" v-bind:alt="resultDevice" class="character_icon">
     <div class="description">
@@ -54,17 +54,30 @@ export default {
       result: {},
       resultDevice: '',
       resultMsg: results,
+      deviceDescription: {
+        radio: '감성충만',
+        phone: '핵인싸',
+        ps: '저세상 텐션',
+        watch: '자기관리 끝판왕',
+        airpod: '트렌디',
+        calculator: '철두철미',
+        headphone: '4차원',
+        drone: '신출귀몰',
+        keyboard: '행복한 덕후',
+        vacuum: 'FM',
+        speaker: '척척박사'
+      },
       deviceKorean: {
         radio: '라디오',
         phone: '스마트폰',
         ps: '플레이스테이션',
-        watch: '스마트 워치',
+        watch: '스마트워치',
         airpod: '에어팟',
         calculator: '계산기',
         headphone: '헤드폰',
         drone: '드론',
         keyboard: '키보드',
-        vacuum: '청소기',
+        vacuum: '로봇청소기',
         speaker: 'AI스피커'
       },
       deviceTotalScroe: {

@@ -31,13 +31,13 @@ export default {
 <style>
 
 #title-container {
-  margin: 80% auto 50% auto;
+  margin: 50% auto 50% auto;
 }
 
 #sub-title {
-    font-size: 20px;
-    padding-right: 33%;
-  }
+  font-size: 20px;
+  padding-right: 33%;
+}
 
 @media(min-width:400px){
   #sub-title {
@@ -65,7 +65,12 @@ export default {
 }
 
 .logo-img {
-  margin: 50px;
-  height: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 </style>
