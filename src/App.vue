@@ -18,7 +18,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   /* min-height: 100vh; */
-  width: 100%;
+  width: 100vmin;
   height: 100%;
 }
 body {
@@ -27,7 +27,8 @@ body {
 /* fix width for tablets & laptop*/
 @media screen and (min-width: 480px){
   #app {
-    width: 100vmin;
+    width: 480px; /*// 웹뷰 해, 달, 별만 위치 망가짐 ㅜㅜ!*/
+    /* width: 100vmin; /*웹뷰 엄청 깨짐! */
     margin: 0 auto;
   }
 }

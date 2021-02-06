@@ -60,6 +60,7 @@ export default {
         this.$store.state.result = this.result
         this.$router.push('/loading')
       }
+      console.log(screen.width)
     }
   },
   computed: {
@@ -108,9 +109,9 @@ export default {
 }
 
 .title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
-  padding: 40% 10% 20% 10%;
+  padding: 36% 10% 10% 10%;
   color: var(--title-color);
   white-space: pre-line;
 }
@@ -121,13 +122,12 @@ export default {
 
 .btn-answer {
   width: 82%;
-  height: 70px;
+  height: 50px;
   border-radius: 12px;
   border: 0px;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: normal;
-  padding: 10px;
   background-color: var(--btn-color);
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
   margin: 10px;
@@ -169,5 +169,29 @@ export default {
 .stary-night-enter-active {
   transition: all 1s cubic-bezier(.41,.27,.53,1.57)
 }
-
+/* fix width for tablets & laptop*/
+@media screen and (min-width: 480px){
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40% 10% 20% 10%;
+    color: var(--title-color);
+    white-space: pre-line;
+  }
+  .btn-answer {
+    width: 82%;
+    height: 70px;
+    border-radius: 12px;
+    border: 0px;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: var(--btn-color);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+    margin: 10px;
+    outline: none;
+    white-space: pre-line;
+    line-height: 1.25;
+  }
+}
 </style>

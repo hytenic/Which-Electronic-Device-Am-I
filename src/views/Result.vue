@@ -38,7 +38,7 @@
         </button>
       </span>
     </div>
-
+    <!-- <img class="logo-img-result" src="../assets/logo-white.png" alt="logo"> -->
     <footer>
       <img class="logo-img-result" src="../assets/logo-white.png" alt="logo">
     </footer>
@@ -156,12 +156,12 @@ export default {
 
   #device-description {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     padding-top: 30px;
   }
   #result-device{
-    font-size: 36px;
+    font-size: 32px;
     padding-bottom: 30px;
     color: white;
     font-weight: bold;
@@ -170,7 +170,7 @@ export default {
   .description {
     width: 85%;
     margin: 30px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.3;
     color: white;
   }
@@ -192,12 +192,12 @@ export default {
 
   .btn-text {
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   .btn-img {
-    width: 66px;
+    width: 62px;
   }
 
   .btn-share {
@@ -244,4 +244,27 @@ export default {
     top: 0px;
     position: absolute;
   }
+
+  @media(min-width:400px){
+    #device-description {
+      font-size: 22px;
+      font-weight: bold;
+      padding-top: 40px;
+    }
+    .description {
+      width: 85%;
+      margin: 30px;
+      font-size: 18px;
+      line-height: 1.3;
+      color: white;
+    }
+    .btn-text {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .btn-img {
+      width: 70px;
+    }
+}
 </style>
