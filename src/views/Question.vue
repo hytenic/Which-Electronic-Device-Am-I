@@ -24,10 +24,10 @@
     </div>
     <transition name="stary-night">
       <div class="stars" v-if="progress > 7">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 10vh; left: 21vw; transform: rotate(0.1turn);">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 5.5vh; left: 75vw; transform: rotate(0.1turn)">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 11vh; left: 56vw; transform: rotate(0.2turn)">
-        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 3.5vh; left: 32vw; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 10%; left: 21%; transform: rotate(0.1turn);">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 14px; top: 5.5%; left: 75%; transform: rotate(0.1turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 11%; left: 56%; transform: rotate(0.2turn)">
+        <img src="@/assets/star.png" alt="star" class="star" style="width: 20px; top: 3.5%; left: 32%; transform: rotate(0.1turn)">
       </div>
     </transition>
   </div>
@@ -159,6 +159,8 @@ export default {
 
 .stars {
   top: 0px;
+  width: 100%;
+  min-height: 100vh;
   position: absolute;
 }
 
