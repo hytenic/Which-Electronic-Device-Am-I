@@ -2,10 +2,10 @@
   <div class="container-loading">
     <img class="sun-img-loading" src="@/assets/moon.png" />
     <div class="stars-loading">
-      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 14px; top: 10vh; left: 21vw; transform: rotate(0.1turn);">
-      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 14px; top: 5.5vh; left: 75vw; transform: rotate(0.1turn)">
-      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 20px; top: 11vh; left: 56vw; transform: rotate(0.2turn)">
-      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 20px; top: 3.5vh; left: 32vw; transform: rotate(0.1turn)">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 14px; top: 10%; left: 21%; transform: rotate(0.1turn);">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 14px; top: 5.5%; left: 75%; transform: rotate(0.1turn)">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 20px; top: 11%; left: 56%; transform: rotate(0.2turn)">
+      <img src="@/assets/star.png" alt="star" class="star-loading" style="width: 20px; top: 3.5%; left: 32%; transform: rotate(0.1turn)">
     </div>
     <div id="loading-msg">
       두구두구두구...!!!
@@ -60,6 +60,8 @@ export default {
 .stars-loading {
   top: 25%;
   position: absolute;
+  width: 100%;
+  min-height: 100vh;
 }
 
 </style>

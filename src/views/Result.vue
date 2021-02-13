@@ -245,6 +245,7 @@ export default {
     width: 100%;
     min-height: 100vh;
     position: absolute;
+    pointer-events: none;
   }
 
   @media(min-width:400px){
